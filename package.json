@@ -1,0 +1,28 @@
+{
+  "name": "overtones-nun-komm",
+  "version": "1.0.0",
+  "description": "music for Nun komm, der Heiden Heiland",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-prod": "watchify -p tinyify client.js -o main.js",
+    "build": "watchify client.js -o main.js",
+    "launch-server": "live-server",
+    "start": "npm-run-all --parallel build launch-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjfreund/overtones-nun-komm.git"
+  },
+  "author": "R.J. Freund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjfreund/overtones-nun-komm/issues"
+  },
+  "homepage": "https://github.com/rjfreund/overtones-nun-komm#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "tinyify": "^2.5.1",
+    "watchify": "^3.11.1"
+  }
+}

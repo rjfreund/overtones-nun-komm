@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harmonic Overtone Series</title>
+</head>
+
+<body>
+    <label>Fundamental Frequency in Hertz</label>
+    <input id="fundamental" value="13.75" type="text" />
+    <br/>
+    <label>Fundamentals: </label><span>C0:	16.35, C#0/Db0: 17.32, D0: 18.35, D#0/Eb0: 19.45, E0: 20.60, F0: 21.83, 
+        F#0/Gb0: 23.12, G0: 24.50, G#0/Ab0:	25.96, A0: 27.50, A#0/Bb0: 29.14, B0: 30.87</span>
+    <br/>
+    <label>Number of Overtones</label>
+    <input id="numOvertones" value="100" type="number" />
+    <br/>
+    <label>Wave</label>
+    <select id='wave'>
+        <option>sawtooth</option>
+        <option>square</option>
+        <option selected>sine</option>
+        <option>triangle</option>
+    </select>
+    <br/>
+    <button id="nextNoteBtn">Next</button>
+    <table id="overtonesTable">
+        <thead>
+            <tr>
+                <th>overtone number</th><th>interval</th><th>ratio</th><th>frequency in hz</th><th>enabled</th><th>oscilloscope</th>
+            </tr>
+        </thead>
+        <tbody>            
+        </tbody>
+    </table>
+    <button id="nextBtn">Next</button>
+</body>
+    <script src='main.js'></script>
+</html>
